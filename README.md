@@ -52,7 +52,7 @@ if ('serviceWorker' in navigator) {
 ## CacheStorage.open()
 
 The open() method of the [CacheStorage](https://developer.mozilla.org/es/docs/Web/API/USVString) interface returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that resolves to the [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) object matching the cacheName.
-###Ejemplo
+### Ejemplo
 
 
 ```
