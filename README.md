@@ -4,7 +4,7 @@
 
 Los Service workers actúan esencialmente como proxy servers asentados entre las aplicaciones web, el navegador y la red (cuando está accesible). Están destinados, entre otras cosas, a permitir la creación de experiencias offline efectivas, interceptando peticiones de red y realizando la acción apropiada si la conexión de red está disponible y hay disponibles contenidos actualizados en el servidor. También permitirán el acceso a notificaciones tipo push y APIs de sincronización en segundo plano.
 
-[## Descarga, instalación y activación](https://developer.mozilla.org/es/docs/Web/API/Service_Worker_API#Descarga_instalaci%C3%B3n_y_activaci%C3%B3n)
+## [Descarga, instalación y activación](https://developer.mozilla.org/es/docs/Web/API/Service_Worker_API#Descarga_instalaci%C3%B3n_y_activaci%C3%B3n)
 
 En este punto, su service worker observará el siguiente ciclo de vida:
 
@@ -23,17 +23,17 @@ Después de esto se descarga cada 24 horas aproximadamente. Se puede descargar c
    	  .then(function(ServiceWorkerRegistration) { ... });
 ```
 
-####scriptURL
+#### scriptURL
 
 La URL del script de trabajador de servicio.
 
-####options Optional
+#### options Optional
 
 Un objeto que contiene opciones de registro. Las opciones disponibles actualmente son:
 
 - alcance: [USVString](https://developer.mozilla.org/es/docs/Web/API/USVString) representa una URL que define el alcance de registro de un “service worker”; es decir, qué rango de URL puede controlar un “service worker”. Esto es generalmente una URL relativa. El valor predeterminado es la URL que obtendría si resolviera ‘./’ utilizando la ubicación de la página web como base. No es, como se cree comúnmente, relativo a la ubicación del “service worker”. Vea la sección de Ejemplos para más información sobre cómo funciona.
 
-##Ejemplo
+## Ejemplo
 
 ```
 if ('serviceWorker' in navigator) {
@@ -49,7 +49,7 @@ if ('serviceWorker' in navigator) {
 }
 ```
 
-##CacheStorage.open()
+## CacheStorage.open()
 
 The open() method of the [CacheStorage](https://developer.mozilla.org/es/docs/Web/API/USVString) interface returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that resolves to the [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) object matching the cacheName.
 ###Ejemplo
@@ -68,11 +68,11 @@ var cachedResponse = caches.match(event.request).catch(function() {
 });
 
 ```
-##Cache
+## Cache
 
 La **Cache** interfaz proporciona un mecanismo de almacenamiento para [Request](http://fetch.spec.whatwg.org/#request)/ [Response](http://fetch.spec.whatwg.org/#response)pares de objetos que se almacenan en caché, por ejemplo, como parte del [ServiceWorker}(https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker) ciclo de vida. Tenga en cuenta que la Cacheinterfaz está expuesta a ámbitos con ventanas, así como a los trabajadores. No tiene que usarlo junto con los trabajadores del servicio, aunque esté definido en la especificación del trabajador del servicio.
 
-###[Métodos](https://developer.mozilla.org/en-US/docs/Web/API/Cache#methods)
+### [Métodos](https://developer.mozilla.org/en-US/docs/Web/API/Cache#methods)
 
 [Cache.match](https://developer.mozilla.org/en-US/docs/Web/API/Cache/match) (request, options)
 
