@@ -4,7 +4,7 @@
 
 Los Service workers actúan esencialmente como proxy servers asentados entre las aplicaciones web, el navegador y la red (cuando está accesible). Están destinados, entre otras cosas, a permitir la creación de experiencias offline efectivas, interceptando peticiones de red y realizando la acción apropiada si la conexión de red está disponible y hay disponibles contenidos actualizados en el servidor. También permitirán el acceso a notificaciones tipo push y APIs de sincronización en segundo plano.
 
-[##Descarga, instalación y activación](https://developer.mozilla.org/es/docs/Web/API/Service_Worker_API#Descarga_instalaci%C3%B3n_y_activaci%C3%B3n)
+[## Descarga, instalación y activación](https://developer.mozilla.org/es/docs/Web/API/Service_Worker_API#Descarga_instalaci%C3%B3n_y_activaci%C3%B3n)
 
 En este punto, su service worker observará el siguiente ciclo de vida:
 
@@ -20,7 +20,8 @@ Después de esto se descarga cada 24 horas aproximadamente. Se puede descargar c
 [Parámetros](https://developer.mozilla.org/es/docs/Web/API/ServiceWorkerContainer/register#Par%C3%A1metros)
 ```
    	 ServiceWorkerContainer.register(scriptURL, options)
-   	  .then(function(ServiceWorkerRegistration) { ... });```
+   	  .then(function(ServiceWorkerRegistration) { ... });
+```
 
 ####scriptURL
 
